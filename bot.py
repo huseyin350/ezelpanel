@@ -634,4 +634,4 @@ if __name__ == '__main__':
         logger.error("templates dizini bulunamadı: %s", TEMPLATES_DIR)
     else:
         logger.info("Templates files: %s", ', '.join(sorted(os.listdir(TEMPLATES_DIR))))
-    app.run(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))q
+    app.run(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
