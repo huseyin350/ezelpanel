@@ -141,10 +141,9 @@ def set_security_headers(resp):
         "font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; "
         "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; "
         "img-src 'self' data: blob: https:; "
-        "connect-src 'self' https://keneviznewapi.onrender.com  http://localhost http://127.0.0.1;"
+        "connect-src 'self' https://keneviznewapi.onrender.com  http://localhost https://ezelpanel.onrender.com;"
     )
     return resp
-
 # ---------- decorators ----------
 def rate_limit(f):
     @wraps(f)
